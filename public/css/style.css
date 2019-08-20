@@ -1,0 +1,234 @@
+h1,
+h2 {
+  font-weight: normal;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+a {
+  color: #42b983;
+}
+
+.menu-background {
+  background-color: #47A3DA;
+}
+
+#mainMenu ul {
+  margin-bottom: 0px;
+}
+
+#mainMenu ul li {
+  margin: 0 1px;
+}
+
+#mainMenu .navbar-nav li {
+  font-size: 1.2rem;
+}
+
+#AdMain .mt-2 ul li {
+  display: block;
+}
+
+/* sign in FORM */
+
+#login {
+  width: 40%;
+  margin: 10% auto;
+  background-color: #E5F5F9;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+}
+
+#login h1 {
+  padding-top: 3%;
+}
+
+#login form {
+  width: 100%;
+  max-width: 410px;
+  padding: 15px;
+  margin: auto;
+}
+
+#login .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+
+#login .form-control:focus {
+  z-index: 2;
+}
+
+#login .form-signin input[type=email] {
+  margin-bottom: 3%;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+#login .form-signin input[type=password] {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+#login .social-login {
+  width: 390px;
+  margin: 0 auto 10%;
+}
+
+#login .social-btn {
+  font-weight: 100;
+  color: white;
+  width: 190px;
+  font-size: 0.9rem;
+}
+
+#login a {
+  display: block;
+  padding-top: 10px;
+  color: lightseagreen;
+}
+
+#login .lines {
+  width: 200px;
+  border: 1px solid red;
+}
+
+#login button[type=submit] {
+  margin-top: 10px;
+}
+
+#login .facebook-btn {
+  background-color: #3C589C;
+}
+
+#login .google-btn {
+  background-color: #DF4B3B;
+}
+
+#login .form-reset,
+#login .form-signup {
+  display: none;
+}
+
+#login .form-signup .social-btn {
+  width: 210px;
+}
+
+#login .form-signup input {
+  margin-bottom: 5px;
+}
+
+#login .form-signup .social-login {
+  width: 210px !important;
+  margin: 0 auto;
+}
+
+#login .form-signup input {
+  margin-bottom: 2px;
+}
+
+#login .form-signup .social-login {
+  width: 210px !important;
+  margin: 0 auto;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 500px) {
+  #login {
+    width: 300px;
+    margin: 20% auto;
+  }
+
+  #login .social-login {
+    width: 200px;
+    margin: 0 auto 10px;
+  }
+
+  #login .social-btn {
+    font-size: 1.3rem;
+    font-weight: 100;
+    color: white;
+    width: 200px;
+    height: 56px;
+  }
+
+  #login .social-btn:nth-child(1) {
+    margin-bottom: 5px;
+  }
+
+  #login .social-btn span {
+    display: none;
+  }
+
+  #login .facebook-btn:after {
+    content: "Facebook";
+  }
+
+  #login .google-btn:after {
+    content: "Google+";
+  }
+}
+
+#regiter .container {
+  width: 660px;
+  position: relative;
+  margin: 10% auto;
+}
+
+#regiter .signup-content {
+  background: #e5f5f9;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  padding: 50px 85px;
+}
+
+#regiter h1 {
+  margin-bottom: 8%;
+}
+
+#AdLanguage .sub-content-wrapper {
+  width: 95%;
+  margin: 2% auto;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border: 3px solid #F4F6F9;
+  padding: 2%;
+  margin: 0px auto;
+  background-color: #fff;
+}
+
+#AdLanguage .sub-content-wrapper .form-50 {
+  width: 50% !important;
+  margin: 0px auto;
+}
+
+#AdLanguage .sub-content-wrapper .form-70 {
+  width: 70% !important;
+  margin: 0px auto;
+}
+
+#AdLanguage .sub-content-wrapper .table th,
+#AdLanguage .sub-content-wrapper td {
+  border: 1px solid #dee2e6;
+}
+

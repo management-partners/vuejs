@@ -1,0 +1,252 @@
+@charset "UTF-8";
+@import "_basic.scss";
+@import "_valiable.scss";
+
+h1,
+h2 {
+  font-weight: normal;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+a {
+  color: $link-a;
+}
+// menu area
+
+.menu-background {
+  background-color: $back-menu;
+}
+
+#mainMenu {
+
+  ul{
+    margin-bottom: 0px;
+    li {
+      margin: 0 1px;
+    }
+  }
+  .navbar-nav li {
+    font-size: 1.2rem;
+  }
+}
+#AdMain {
+  .mt-2 ul li {
+    display: block;
+  }
+}
+
+/* sign in FORM */
+
+#login {
+  width: 40%;
+  margin: 10% auto;
+  background-color: #E5F5F9;
+  // box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  // transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  h1 {
+    padding-top: 3%;
+  }
+
+  form {
+    width: 100%;
+    max-width: 410px;
+    padding: 15px;
+    margin: auto;
+  }
+
+  .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .form-control:focus {
+    z-index: 2;
+  }
+
+  .form-signin input[type="email"] {
+    margin-bottom: 3%;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+
+  .form-signin input[type="password"] {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  .social-login {
+    width: 390px;
+    margin: 0 auto 10%;
+  }
+
+  .social-btn {
+    font-weight: 100;
+    color: white;
+    width: 190px;
+    font-size: 0.9rem;
+  }
+
+  a {
+    display: block;
+    padding-top: 10px;
+    color: lightseagreen;
+  }
+
+  .lines {
+    width: 200px;
+    border: 1px solid red;
+  }
+
+  button[type="submit"] {
+    margin-top: 10px;
+  }
+
+  .facebook-btn {
+    background-color: #3C589C;
+  }
+
+  .google-btn {
+    background-color: #DF4B3B;
+  }
+
+  .form-reset,
+  .form-signup {
+    display: none;
+  }
+
+  .form-signup .social-btn {
+    width: 210px;
+  }
+
+  .form-signup input {
+    margin-bottom: 5px;
+  }
+
+  .form-signup .social-login {
+    width: 210px !important;
+    margin: 0 auto;
+  }
+
+  .form-signup input {
+    margin-bottom: 2px;
+  }
+
+  .form-signup .social-login {
+    width: 210px !important;
+    margin: 0 auto;
+  }
+}
+/* Mobile */
+@media screen and (max-width:500px) {
+  #login {
+    width: 300px;
+    margin: 20% auto;
+
+    .social-login {
+      width: 200px;
+      margin: 0 auto 10px;
+    }
+
+    .social-btn {
+      font-size: 1.3rem;
+      font-weight: 100;
+      color: white;
+      width: 200px;
+      height: 56px;
+    }
+
+    .social-btn:nth-child(1) {
+      margin-bottom: 5px;
+    }
+
+    .social-btn span {
+      display: none;
+    }
+
+    .facebook-btn:after {
+      content: 'Facebook';
+    }
+
+    .google-btn:after {
+      content: 'Google+';
+    }
+  }
+}
+
+#regiter {
+  .container {
+    width: 660px;
+    position: relative;
+    margin: 10% auto;
+  }
+
+  .signup-content {
+    background: #e5f5f9;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -o-border-radius: 10px;
+    -ms-border-radius: 10px;
+    padding: 50px 85px;
+  }
+
+  h1 {
+    margin-bottom: 8%;
+  }
+}
+#AdLanguage {
+  .sub-content-wrapper {
+    width: 95%;
+    margin: 2% auto;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -o-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border: 3px solid #F4F6F9;
+    padding: 2%;
+    margin: 0px auto;
+    background-color: #fff;
+    .form-50 {
+      width: 50% !important;
+      margin: 0px auto;
+    }
+    .form-70 {
+      width: 70% !important;
+      margin: 0px auto;
+    }
+    .table th, td {
+      border: 1px solid #dee2e6;
+    }
+  }
+}
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) { }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {  }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {  }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  }

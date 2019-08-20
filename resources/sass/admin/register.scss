@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+
+#regiter {
+  .container {
+    width: 660px;
+    position: relative;
+    margin: 10% auto;
+  }
+
+  .signup-content {
+    background: #e5f5f9;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -o-border-radius: 10px;
+    -ms-border-radius: 10px;
+    padding: 50px 85px;
+  }
+
+  h1 {
+    margin-bottom: 8%;
+  }
+}

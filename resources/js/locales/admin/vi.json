@@ -1,0 +1,29 @@
+{
+  "menu": {
+    "en": "Tiếng anh",
+    "vi": "Tiếng việt",
+    "ja" : "Tiếng nhật"
+  },
+  "login": {
+    "title": "Đăng nhập hệ thống",
+    "fb_login": "Đăng nhập với facebook",
+    "gg_login": "Đăng nhập với Google+",
+    "btn_login_title": "Đăng nhập",
+    "forgot_pswd": "Quên mật khẩu",
+    "btn_create_title": "Tạo tài khoản mới",
+    "pla_email": "Địa chỉ email",
+    "pla_pwd": "Mật khẩu"
+  },
+  "register": {
+    "title": "Tạo tài khoản",
+    "txt_name": "Tên đăng nhập",
+    "txt_email": "Email của bạn",
+    "txt_pwd": "Mật khẩu",
+    "txt_repeat_pwd": "Lặp lại mật khẩu của bạn",
+    "chk_agree": "Tôi đồng ý tất cả các điều khoản",
+    "btn_sign_in": "Đăng ký",
+    "lb_note": "Đã có tài khoản",
+    "link_login": "Đăng nhập tại đây"
+  },
+  "welcomeMsg": "Chào Mừng Bạn đến với Màn Hình Chính Của Ứng Dụng"
+}

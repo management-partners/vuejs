@@ -1,0 +1,29 @@
+{
+  "menu": {
+    "long_name": "英語",
+    "long_name": "ベトナム語",
+    "long_name" : "日本語"
+  },
+  "login": {
+    "title": "サインイン",
+    "fb_login": "Facebookでサインイン",
+    "gg_login": "Google+でログイン",
+    "btn_login_title": "サインイン",
+    "forgot_pswd": "パスワードをお忘れです",
+    "btn_create_title": "新しいアカウントを作成する",
+    "pla_email": "メールアドレス",
+    "pla_pwd": "パスワード"
+  },
+  "register": {
+    "title": "アカウントの作成",
+    "txt_name": "ログイン名",
+    "txt_email": "あなたのEメール",
+    "txt_pwd": "パスワード",
+    "txt_repeat_pwd": "パスワードをもう一度入力してください",
+    "chk_agree": "すべての声明に同意します",
+    "btn_sign_in": "サインアップ",
+    "lb_note": "すでにアカウントを持っています",
+    "link_login": "ここにログイン"
+  },
+   "welcomeMsg": "Vue.jsアプリへようこそ"
+ }
