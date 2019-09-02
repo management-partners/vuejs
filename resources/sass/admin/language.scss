@@ -1,6 +1,20 @@
 @charset "UTF-8";
 // list screen
 #LanguageList {
-
+}
+#LanguageAdd {
+  .needs-validation{
+    margin: 0px auto;
+    width: 30%;
+  }
+  #invalidCheck{
+       margin-left: 5px;
+       margin-top: 7px;
+ }
+ .check-agree{
+      margin-left: 4%;
+      margin-top: 0px;
+      text-align: center;
+}
 }
 // add screen

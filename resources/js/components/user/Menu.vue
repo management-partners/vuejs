@@ -69,7 +69,7 @@
 <script>
 import i18n  from './../../plugins/i18n';
 import axios from 'axios';
-import { URL_AXIOS, URL_PATH, CONSTANT } from './../../plugins/globalValue.js';
+import { URL_AXIOS, URL_PATH, constant } from './../../plugins/globalValue.js';
 
 export default {
   name: 'Menu',
@@ -92,14 +92,12 @@ export default {
         loadLanguage: function() {
           var getUrl = URL_PATH.hostname+URL_AXIOS.url_getLanguage;
           axios
-              // .get(getUrl, { headers: CONSTANT.headers })
+              // .get(getUrl, { headers: { "Content-Type": "application/json" }, })
               .get(getUrl)
               .then(response => {
                   this.lstLanguage = response.data;
-                  console.log(this.lstLanguage);
               })
               .catch(function (error) {
-                console.log(error);
               });
         }
     },

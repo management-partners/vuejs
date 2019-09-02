@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Models\MstUser;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 use App\Http\Controllers\Controller;
 
 class AdminMstUserController extends Controller
@@ -82,5 +83,46 @@ class AdminMstUserController extends Controller
     public function destroy(MstUser $mstUser)
     {
         //
+    }
+    /**
+     * user send email register
+     * @param \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function sendEmailRegister(Request $request){
+
+        $subject = 'パスワード再発行 | 電話占いカリヨン';
+        $emailTo = $request->email;
+        $emailToName = $request->name;
+        $emailCc = '';
+        $emailCcName = '';
+        $emailBcc = '';
+        $emailBccName = '';
+        $emailFrom = env('MAIL_FROM_ADDRESS');
+        $emailFromName =  env('MAIL_FROM_NAME');
+        $content = 'MAIL_FROM_CONTEN';
+        $emailContent= array(
+          'EMAIL_TO'        => $emailTo,
+          'EMAIL_TO_NAME'   => $emailToName,
+          'EMAIL_CC'        => $emailCc,
+          'EMAIL_CC_NAME'   => $emailCcName,
+          'EMAIL_BCC'       => $emailBcc,
+          'EMAIL_BCC_NAME'  => $emailBccName,
+          'EMAIL_FROM'      => $emailFrom,
+          'EMAIL_FROM_NAME' => $emailFromName,
+          'EMAIL_SUBJECT'   => $subject,
+          'EMAIL_CONTENT'   => $content
+     );
+        $emailtemplate = 'admin.index';
+
+        $result = Helper::sendEmail($emailContent, $emailtemplate);
+        if($result) {
+             return response()->json(['type'=>'success','message' => 'Item created successfully!']);
+             // return back()->with('success','Item created successfully!');
+        }else {
+             return response()->json(['type'=>'error','message' => 'Item created fail!']);
+             // return back()->with('error','Item created successfully!');
+        }
+
     }
 }

@@ -11,9 +11,20 @@ import VueI18n from 'vue-i18n';
 
 import router from './router/admin';
 import i18n from './plugins/i18n';
+import {
+    library
+} from '@fortawesome/fontawesome-svg-core'
+import {
+    fas
+} from '@fortawesome/free-solid-svg-icons'
+import {
+    FontAwesomeIcon
+} from '@fortawesome/vue-fontawesome'
 
-// import FlagIcon from 'vue-flag-icon';
-// Vue.use(FlagIcon);
+library.add(fas)
+
+Vue.component('awesome-icon', FontAwesomeIcon)
+
 
 window.Vue = require('vue');
 

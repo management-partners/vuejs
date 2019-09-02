@@ -22,6 +22,7 @@ Route::group(['namespace' => 'User', 'middleware' =>['api']], function(){
 Route::group(['namespace' => 'Admin', 'middleware' =>['api']], function(){
   Route::apiResource('admin/lang', 'AdminMstLanguageController');
   Route::apiResource('admin/user', 'AdminMstUserController');
+  Route::post('admin/user/sendEmail', 'AdminMstUserController@sendEmailRegister');
 });
 
 // Route::group(['prefix' => 'admin', 'namespace' => 'Admin','middleware' =>['api']], function(){

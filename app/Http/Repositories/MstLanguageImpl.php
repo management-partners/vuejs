@@ -29,7 +29,7 @@
      * get all record from database
      */
      public function getListLanguage() {
-       return $this->model::all();
+          return $this->model::all();
      }
 
      /**

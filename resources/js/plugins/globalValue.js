@@ -1,11 +1,13 @@
 export const URL_AXIOS = {
-   url_getLanguage: 'api/user/lang'
+    url_getLanguage: 'api/user/lang'
 }
-
+export const URL_AXIOS_ADMIN = {
+    url_getLanguage: 'api/admin/lang'
+}
 export const URL_PATH = {
-   hostname: 'https://vue-laravel.dev/'
+    hostname: 'http://vue-laravel.local/'
 }
 
-export const CONSTANT = {
-   headers: "{'Accept': 'application/json'}"
+export const constant = {
+    headers: "{'Accept': 'application/json'}"
 }

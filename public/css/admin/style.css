@@ -185,6 +185,38 @@
   margin-bottom: 8%;
 }
 
+#LanguageAdd .needs-validation {
+  margin: 0px auto;
+  width: 30%;
+}
+
+#LanguageAdd #invalidCheck {
+  margin-left: 5px;
+  margin-top: 7px;
+}
+
+#LanguageAdd .check-agree {
+  margin-left: 4%;
+  margin-top: 0px;
+  text-align: center;
+}
+
+#UserAdd #invalidCheck {
+  margin-left: 5px;
+  margin-top: 7px;
+}
+
+#UserAdd .check-agree {
+  margin-left: 4%;
+  margin-top: 0px;
+  text-align: center;
+}
+
+#UserAdd .needs-validation {
+  margin: 0px auto;
+  width: 40%;
+}
+
 h1,
 h2 {
   font-weight: normal;
@@ -204,35 +236,26 @@ a {
   color: #42b983;
 }
 
-#AdLanguage .sub-content-wrapper {
-  width: 95%;
-  margin: 2% auto;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -o-border-radius: 10px;
-  -ms-border-radius: 10px;
-  border: 3px solid #F4F6F9;
-  padding: 2%;
-  margin: 0px auto;
-  background-color: #fff;
+.td-action-control {
+  width: 10%;
 }
 
-#AdLanguage .sub-content-wrapper .form-50 {
-  width: 50% !important;
-  margin: 0px auto;
+.admin-table {
+  border: 1px solid green;
 }
 
-#AdLanguage .sub-content-wrapper .form-70 {
-  width: 70% !important;
+.btn-action {
   margin: 0px auto;
-}
-
-#AdLanguage .sub-content-wrapper .table th,
-#AdLanguage .sub-content-wrapper td {
-  border: 1px solid #dee2e6;
+  text-align: center;
 }
 
 .breadcrumb-loading {
   margin-top: 53px;
+}
+
+.back-form {
+  border-radius: 20px;
+  background-color: white;
+  padding: 3% 0px;
 }
 

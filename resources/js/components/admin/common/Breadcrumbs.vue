@@ -9,8 +9,8 @@
                           <i class="fa fa-home" data-pack="default" data-tags=""></i> Dashboard
                       </a>
                   </li>
-                  <li class=" breadcrumb-item">
-                      <a href="#">Layouts</a>
+                  <li v-for="(item, index) in names" :key="index" class="breadcrumb-item">
+                      <router-link :to="{ name: item, params: {} }">&nbsp;&nbsp;&nbsp; {{item}}</router-link>
                   </li>
               </ul>
             </div>
@@ -22,6 +22,7 @@
 <script>
 export default {
   name: 'Breadcrumb',
-  template: '#Breadcrumb'
+  template: '#Breadcrumb',
+  props:  ['names']
 }
 </script>

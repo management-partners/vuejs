@@ -19,7 +19,7 @@ class CreateMstLanguage extends Migration
             $table->string('short_name', 2)->nullable(false);
             $table->string('long_name', 20)->nullable(false);
             $table->string('icon', 50);
-            $table->tinyInteger('flag')->default(0);
+            $table->boolean('flag')->default(false);
             $table->bigInteger('created_user')->nullable(false);
             $table->bigInteger('updated_user')->nullable(true);
             $table->bigInteger('deleted_user')->nullable(true);

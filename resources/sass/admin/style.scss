@@ -4,6 +4,7 @@
 @import "login.scss";
 @import "register.scss";
 @import "language.scss";
+@import "user.scss";
 
 h1,
 h2 {
@@ -23,35 +24,24 @@ li {
 a {
   color: $link-a;
 }
-
-#AdLanguage {
-  .sub-content-wrapper {
-    width: 95%;
-    margin: 2% auto;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -o-border-radius: 10px;
-    -ms-border-radius: 10px;
-    border: 3px solid #F4F6F9;
-    padding: 2%;
-    margin: 0px auto;
-    background-color: #fff;
-    .form-50 {
-      width: 50% !important;
-      margin: 0px auto;
-    }
-    .form-70 {
-      width: 70% !important;
-      margin: 0px auto;
-    }
-    .table th, td {
-      border: 1px solid #dee2e6;
-    }
-  }
+.td-action-control{
+     width: 10%;
+}
+.admin-table{
+     border: 1px solid green;
+}
+.btn-action {
+  margin: 0px auto;
+  text-align: center;
 }
 #Breadcrumb {
   // margin-top: 4%;
 }
 .breadcrumb-loading {
   margin-top: 53px;
+}
+.back-form{
+  border-radius: 20px;
+  background-color: white;
+  padding: 3% 0px;
 }

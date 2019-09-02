@@ -19,4 +19,5 @@ class MstUser extends Model
     protected $primaryKey = "id";
 
     protected $fillable = ['id', 'user_name', 'full_name', 'icon', 'flag'];
+    protected $hidden = ['password', 'remember_token'];
 }

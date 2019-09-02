@@ -901,7 +901,7 @@ a.list-group-item {
 
 .outer {
   padding: 10px;
-  margin-top: 25px; }
+  margin-top: 10px; }
 
 .outer:before, .outer:after {
   content: " ";
@@ -1050,7 +1050,7 @@ body.error .logo h1 {
 
 .bg-container {
   background: #eaeaea;
-  color: #525252; }
+}
 
 .user-settings button {
   border: none;

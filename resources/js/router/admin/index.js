@@ -5,6 +5,7 @@ import Sidebar from '../../components/admin/common/Sidebar'
 import MainMenu from '../../components/admin/common/Menu'
 import Skin from '../../components/admin/common/Skin'
 import Breadcrumb from '../../components/admin/common/Breadcrumbs'
+import FlashMessage from '../../components/admin/common/flash-message'
 
 import LanguageList from '../../components/admin/language/List'
 import LanguageAdd from '../../components/admin/language/Add'
@@ -17,12 +18,13 @@ Vue.component('dashboard-menu', MainMenu)
 Vue.component('dashboard-sidebar', Sidebar)
 Vue.component('dashboard-skin', Skin)
 Vue.component('dashboard-breadcrumb', Breadcrumb)
+Vue.component('flash-message', FlashMessage)
 
 export default new Router({
-    hashbang: false,
     mode: 'history',
+    hashbang: false,
     linkActiveClass: "active",
-    root: '/admin/',
+    linkExactActiveClass: "active",
     routes: [{
             path: '/admin/',
             name: 'Dashboard',
@@ -46,7 +48,7 @@ export default new Router({
             component: LanguageList
         },
         {
-            path: '/admin/lang/add',
+            path: '/admin/lang/create',
             name: 'LanguageAdd',
             component: LanguageAdd
         },
@@ -56,7 +58,7 @@ export default new Router({
             component: UserList
         },
         {
-            path: '/admin/user/add',
+            path: '/admin/user/create',
             name: 'UserAdd',
             component: UserAdd
         },

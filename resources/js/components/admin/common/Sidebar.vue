@@ -1,10 +1,8 @@
 <template id='Sidebar'>
-  <div id="sidebar">
-    <div class="menu_scroll">
         <!-- #menu -->
         <ul id="menu">
             <li>
-                <router-link :to="{ name: 'Dashboard', params: {} }">&nbsp;Dashboard</router-link>
+                <router-link :to="{ name: 'Dashboard', params: {} }" >&nbsp;Dashboard</router-link>
             </li>
             <li class="dropdown_menu">
                 <a href="javascript:void(0)">
@@ -14,10 +12,10 @@
                 </a>
                 <ul>
                     <li>
-                        <router-link :to="{ name: 'LanguageList', params: {} }" class="nav-link">&nbsp; Language List</router-link>
+                        <router-link :to="{ name: 'LanguageList', params: {} }" >&nbsp; Language List</router-link>
                     </li>
                     <li>
-                      <router-link :to="{ name: 'LanguageAdd', params: {} }" class="nav-link">&nbsp; Add Language</router-link>
+                      <router-link :to="{ name: 'LanguageAdd', params: {} }" >&nbsp; Add Language</router-link>
                     </li>
                 </ul>
             </li>
@@ -29,16 +27,14 @@
                 </a>
                 <ul>
                     <li>
-                        <router-link :to="{ name: 'UserList', params: {} }" class="nav-link">&nbsp; User List</router-link>
+                        <router-link :to="{ name: 'UserList', params: {} }" >&nbsp; User List</router-link>
                     </li>
                     <li>
-                      <router-link :to="{ name: 'UserAdd', params: {} }" class="nav-link">&nbsp; Add User</router-link>
+                      <router-link :to="{ name: 'UserAdd', params: {} }" >&nbsp; Add User</router-link>
                     </li>
                 </ul>
             </li>
         </ul>
-    </div>
-  </div>
 </template>
 
 <script>

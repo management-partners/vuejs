@@ -1838,13 +1838,10 @@ __webpack_require__.r(__webpack_exports__);
       var _this = this;
 
       var getUrl = _plugins_globalValue_js__WEBPACK_IMPORTED_MODULE_2__["URL_PATH"].hostname + _plugins_globalValue_js__WEBPACK_IMPORTED_MODULE_2__["URL_AXIOS"].url_getLanguage;
-      axios__WEBPACK_IMPORTED_MODULE_1___default.a // .get(getUrl, { headers: CONSTANT.headers })
+      axios__WEBPACK_IMPORTED_MODULE_1___default.a // .get(getUrl, { headers: { "Content-Type": "application/json" }, })
       .get(getUrl).then(function (response) {
         _this.lstLanguage = response.data;
-        console.log(_this.lstLanguage);
-      })["catch"](function (error) {
-        console.log(error);
-      });
+      })["catch"](function (error) {});
     }
   },
   created: function created() {
@@ -19791,21 +19788,25 @@ module.exports = JSON.parse("{\"menu\":{\"long_name\":\"Tiếng nhật\"},\"logi
 /*!*********************************************!*\
   !*** ./resources/js/plugins/globalValue.js ***!
   \*********************************************/
-/*! exports provided: URL_AXIOS, URL_PATH, CONSTANT */
+/*! exports provided: URL_AXIOS, URL_AXIOS_ADMIN, URL_PATH, constant */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "URL_AXIOS", function() { return URL_AXIOS; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "URL_AXIOS_ADMIN", function() { return URL_AXIOS_ADMIN; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "URL_PATH", function() { return URL_PATH; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CONSTANT", function() { return CONSTANT; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "constant", function() { return constant; });
 var URL_AXIOS = {
   url_getLanguage: 'api/user/lang'
 };
-var URL_PATH = {
-  hostname: 'https://vue-laravel.dev/'
+var URL_AXIOS_ADMIN = {
+  url_getLanguage: 'api/admin/lang'
 };
-var CONSTANT = {
+var URL_PATH = {
+  hostname: 'http://vue-laravel.local/'
+};
+var constant = {
   headers: "{'Accept': 'application/json'}"
 };
 

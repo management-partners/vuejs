@@ -21,7 +21,7 @@ class AdminMstLanguageController extends Controller
      */
     public function index()
     {
-        return response()->json($this->ILanguage->getListLanguage());
+         return response()->json($this->ILanguage->getListLanguage());
     }
 
     /**
